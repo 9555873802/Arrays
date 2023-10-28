@@ -1,0 +1,111 @@
+//To take input from user-
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n=100;int arr[n];
+//     cout<<"Enter size: ";
+//     cin>>n;
+//     for(int i=0;i<n;i++)
+//     {
+//         cout<<"Input:";
+//         cin>>arr[i];
+//     }
+//     for(int i=0;i<n;i++)
+//     {
+//         cout<<"Output";
+//         cout<<arr[i]<<endl;
+//     }
+//     return 0;
+// }
+//Output:
+//Enter size: 5
+// Input:6
+// Input:9
+// Input:1
+// Input:7
+// Input:8
+// Output6
+// Output9
+// Output1
+// Output7
+// Output8
+//-----------------------------------------------------------------------------
+//LinearSearch-
+// #include<iostream>
+// using namespace std;
+// int linearsearch(int n,int arr[],int key)
+// {
+//     for(int i=0;i<n;i++)
+//     {
+//         if(arr[i]==key)
+//         {
+//             cout<<"Found";
+//         }
+    
+        
+//     }
+//     return 0;
+// }
+// int main()
+// {
+//     int n=9,key,arr[n];
+//     cout<<"Enter size of elements:"<<endl;
+//     cin>>n;
+    
+//     for(int i=0;i<n;i++)
+//     {
+//         cout<<"Input:";
+//         cin>>arr[i];
+//     }
+//     for(int i=0;i<n;i++)
+//     {
+//         cout<<"Output:";
+//         cout<<arr[i]<<endl;
+//     }
+//     cout<<"Enter the element to search:";
+//     cin>>key;
+//     linearsearch( n, arr, key);
+// }
+//Output
+//Enter size of elements:
+// 3
+// Input:2
+// Input:4
+// Input:5
+// Output:2
+// Output:4
+// Output:5
+// Enter the element to search:4
+// Found
+//-----------------------------------------------------------------------------
+//BinarySearch-
+// #include <iostream>
+// using namespace std;
+
+// int binarySearch(int arr[], int l, int r, int x) {
+//     while (l <= r) {
+//         int m = l + (r - l) / 2;
+//         if (arr[m] == x)
+//             return m;
+//         if (arr[m] < x)
+//             l = m + 1;
+//         else
+//             r = m - 1;
+//     }
+//     return -1;
+// }
+
+// int main() {
+//     int arr[] = { 2, 3, 4, 10, 40 };
+//     int n = sizeof(arr) / sizeof(arr[0]);
+//     int x = 10;
+//     int result = binarySearch(arr, 0, n - 1, x);
+//     if (result == -1)
+//         cout << "Element is not present in array";
+//     else
+//         cout << "Element is present at index: " << result;
+//     return 0;
+// }
+//Output:
+// Element is present at index: 3
